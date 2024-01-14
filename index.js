@@ -10,7 +10,7 @@ readdirSync("./routes").map((file) =>
 );
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.sendFile(__dirname + "/index.html");
 });
 
 require("dotenv").config();
